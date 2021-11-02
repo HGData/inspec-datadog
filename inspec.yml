@@ -1,0 +1,8 @@
+name: inspec-datadog
+title: DataDog
+maintainer: chris.deutsch@hginsights.com
+summary: DataDog resources.
+copyright: HG Insights, Inc.
+version: 0.1
+license: Apache-2.0
+inspec_version: '>= 4.0'
