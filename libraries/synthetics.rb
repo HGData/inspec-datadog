@@ -24,7 +24,7 @@ class DataDogSyntheticAPI < Inspec.resource(1)
       api_instance = DatadogAPIClient::V1::SyntheticsAPI.new
       synthetics = api_instance.list_tests.tests
       fail_resource("cannot find api synthetic #{@opts[:name]}") if synthetics.nil? || synthetics.size.zero?
-      @synthetic = synthetics.select{ |test| test.name == @opts[:name] }.first
+      @synthetic = synthetics.select { |test| test.name == @opts[:name] }.first
     rescue StandardError => e
       fail_resource("error getting synthetic #{@opts[:name]}: #{e}")
     end
