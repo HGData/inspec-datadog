@@ -1,6 +1,6 @@
 require 'datadog_api_client'
 
-# InSpec for DataDog
+# InSpec for DataDog Monitors
 class DataDogMonitor < Inspec.resource(1)
   name 'datadog_monitor'
   desc 'A DataDog Monitor'
