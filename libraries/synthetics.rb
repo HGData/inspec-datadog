@@ -78,6 +78,14 @@ class DataDogSyntheticAPI < Inspec.resource(1)
     @synthetic.options.tick_every
   end
 
+  def min_failure_duration
+    @synthetic.options.min_failure_duration
+  end
+
+  def min_location_failed
+    @synthetic.options.min_location_failed
+  end
+
   def locations
     @synthetic.locations
   end
